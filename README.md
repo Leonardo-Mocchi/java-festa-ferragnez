@@ -15,10 +15,10 @@ Create a Java project `java-festa-ferragnez` with:
 
 The program must:
 
-1. [ ] Create and initialize an array containing the names of invited guests
-2. [ ] Ask the user for their name
-3. [ ] Verify that the name is present in the guest list
-4. [ ] Either allow entry or politely redirect them away 😎
+1. [x] Create and initialize an array containing the names of invited guests
+2. [x] Ask the user for their name
+3. [x] Verify that the name is present in the guest list
+4. [x] Either allow entry or politely redirect them away 😎
 
 ## Bonus Challenge
 
