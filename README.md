@@ -22,7 +22,7 @@ The program must:
 
 ## Bonus Challenge
 
-[ ] If you used a `for` loop to search for the name in the base assignment, implement the same program using a `while` loop, and vice versa.
+[x] If you used a `for` loop to search for the name in the base assignment, implement the same program using a `while` loop, and vice versa.
 
 ## Guest List
 

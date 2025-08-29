@@ -6,7 +6,7 @@ public class CheckGuest {
     public static void main(String[] args) {
 
         // to ask the user their name
-        System.out.println("Please enter your full name");
+        System.out.println("Please enter your name");
         Scanner input = new Scanner(System.in);
         String inputGuest = input.nextLine().toLowerCase();
         input.close();
@@ -40,10 +40,21 @@ public class CheckGuest {
 
         // check if the user is in the guest list
         boolean inGuestList = false;
-        for (int i = 0; i < invitedGuests.length; i++) {
-            if (formattedInputGuest.equals(invitedGuests[i])) {
+        /*
+         * for (int i = 0; i < invitedGuests.length; i++) {
+         * if (formattedInputGuest.equals(invitedGuests[i])) {
+         * inGuestList = true;
+         * }
+         * }
+         */
+
+        // bonus through the while loop
+        int index = 0;
+        while (index < invitedGuests.length) {
+            if (formattedInputGuest.equals(invitedGuests[index])) {
                 inGuestList = true;
             }
+            index++;
         }
 
         // response message to the user
