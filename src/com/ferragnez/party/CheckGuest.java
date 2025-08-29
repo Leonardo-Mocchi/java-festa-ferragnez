@@ -40,22 +40,25 @@ public class CheckGuest {
 
         // check if the user is in the guest list
         boolean inGuestList = false;
-        /*
-         * for (int i = 0; i < invitedGuests.length; i++) {
-         * if (formattedInputGuest.equals(invitedGuests[i])) {
-         * inGuestList = true;
-         * }
-         * }
-         */
+
+        for (int i = 0; !inGuestList && i < invitedGuests.length; i++) {
+            if (formattedInputGuest.equals(invitedGuests[i])) {
+                inGuestList = true;
+                /* break; // either the break here or above "!inGuestList &&" only one is
+                needed because they do the same thing */
+            }
+        }
 
         // bonus through the while loop
-        int index = 0;
-        while (index < invitedGuests.length) {
-            if (formattedInputGuest.equals(invitedGuests[index])) {
-                inGuestList = true;
-            }
-            index++;
-        }
+        /*
+         int index = 0;
+         while (!inGuestList && index < invitedGuests.length) {
+         if (formattedInputGuest.equals(invitedGuests[index])) {
+         inGuestList = true;
+         }
+         index++;
+         }
+         */
 
         // response message to the user
         if (inGuestList) {
